@@ -36,27 +36,27 @@
     *El nuevo esquema en 3FN queda como sigue*:
 
     1) **Tabla Torneo**
-           Atributos: `cod_torneo`, `nombre_torneo`
-           Clave primaria: `cod_torneo`
+           - Atributos: `cod_torneo`, `nombre_torneo`
+           - Clave primaria: `cod_torneo`
 
     3) **Tabla Corredor**
-           Atributos: `cod_torneo`, `cod_corredor`, `nyap_corredor`
-           Clave primaria compuesta: (`cod_torneo`, `cod_corredor`)
-           Clave foránea: `cod_torneo` (referencia a `Torneo`)
+           - Atributos: `cod_torneo`, `cod_corredor`, `nyap_corredor`
+           - Clave primaria compuesta: (`cod_torneo`, `cod_corredor`)
+           - Clave foránea: `cod_torneo` (referencia a `Torneo`)
 
     5) **Tabla Bicicleta**
-           Atributos: `cod_torneo`, `cod_bicicleta`, `marca_bicicleta`
-           Clave primaria compuesta: (`cod_torneo`, `cod_bicicleta`)
-           Clave foránea: `cod_torneo` (referencia a `Torneo`)
+           - Atributos: `cod_torneo`, `cod_bicicleta`, `marca_bicicleta`
+           - Clave primaria compuesta: (`cod_torneo`, `cod_bicicleta`)
+           - Clave foránea: `cod_torneo` (referencia a `Torneo`)
 
     7) **Tabla Sponsor**
-           Atributos: `sponsor`, `DNI_presidente_sponsor`, `DNI_medico`
-           Clave primaria: `sponsor`
+           - Atributos: `sponsor`, `DNI_presidente_sponsor`, `DNI_medico`
+           - Clave primaria: `sponsor`
 
     9) **Tabla Patrocinio**
-           Atributos: `cod_torneo`, `cod_corredor`, `cod_bicicleta`, `sponsor`
-           Clave primaria compuesta: (`cod_torneo`,  `cod_corredor`, `cod_bicicleta`, `sponsor`)
-           Claves foráneas:
+           - Atributos: `cod_torneo`, `cod_corredor`, `cod_bicicleta`, `sponsor`
+           - Clave primaria compuesta: (`cod_torneo`,  `cod_corredor`, `cod_bicicleta`, `sponsor`)
+           - Claves foráneas:
                    `cod_torneo`, `cod_corredor` (referencia a `Corredor`)
                    `cod_torneo`, `cod_bicicleta` (referencia a `Bicicleta`)
                    `sponsor` (referencia a Sponsor)
