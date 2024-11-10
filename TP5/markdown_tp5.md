@@ -35,25 +35,25 @@
 
     El nuevo esquema en 3FN queda como sigue:
 
-    1)Tabla Torneo
+    1) Tabla Torneo
          Atributos: cod_torneo, nombre_torneo
          Clave primaria: cod_torneo
 
-    2)Tabla Corredor
+    2) Tabla Corredor
           Atributos: cod_torneo, cod_corredor, nyap_corredor
          Clave primaria compuesta: (cod_torneo, cod_corredor)
           Clave foránea: cod_torneo (referencia a Torneo)
 
-    3)Tabla Bicicleta
+    3) Tabla Bicicleta
            Atributos: cod_torneo, cod_bicicleta, marca_bicicleta
            Clave primaria compuesta: (cod_torneo, cod_bicicleta)
            Clave foránea: cod_torneo (referencia a Torneo)
 
-    4)Tabla Sponsor
+    4) Tabla Sponsor
           Atributos: sponsor, DNI_presidente_sponsor, DNI_medico
          Clave primaria: sponsor
 
-    5)Tabla Patrocinio
+    5) Tabla Patrocinio
           Atributos: cod_torneo, cod_corredor, cod_bicicleta, sponsor
           Clave primaria compuesta: (cod_torneo,  cod_corredor,cod_bicicleta, sponsor)
           Claves foráneas:
