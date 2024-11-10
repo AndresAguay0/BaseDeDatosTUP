@@ -1,4 +1,4 @@
-1. Determinación de Dependencias Funcionales  ################################################################################
+1. Determinación de Dependencias Funcionales  ######################################
 
     Basándonos en las restricciones, podemos deducir las siguientes dependencias funcionales para TORNEO:
 
@@ -11,7 +11,7 @@
     4) {cod_torneo, cod_corredor, sponsor} → DNI_presidente_sponsor, DNI_medico: Cada sponsor tiene un único presidente y médico, y esta relación es única por corredor y torneo.
 
 
-2. Claves Candidatas  ################################################################################
+2. Claves Candidatas  ######################################
 
     Para identificar las claves candidatas, observamos que:
 
@@ -20,12 +20,12 @@
     Por lo tanto, la única clave candidata es {cod_torneo, cod_corredor, cod_bicicleta, sponsor}.
 
 
-3. Elección de Clave Primaria  ################################################################################
+3. Elección de Clave Primaria  ######################################
    
     Elegimos {cod_torneo, cod_corredor, cod_bicicleta, sponsor} como clave primaria, ya que identifica de manera única cada registro en la tabla TORNEO y permite que todas las dependencias funcionales estén correctamente localizadas.
 
 
-5. Normalización hasta 3FN  ################################################################################
+5. Normalización hasta 3FN  ######################################
    
     1FN: La tabla TORNEO ya está en 1FN, ya que todos los atributos son atómicos.
 
