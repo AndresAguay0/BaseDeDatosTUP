@@ -1,3 +1,26 @@
+**Ejercicio: Exposición**
+
+**Esquema de BD:**
+
+`TORNEO<cod_torneo, nombre_torneo, cod_corredor, cod_bicicleta, marca_bicicleta, nyap_corredor, sponsor, DNI_presidente_sponsor, DNI_medico>`
+
+**Restricciones:**
+
+*a. El código del torneo es único y no se repite para diferentes torneos. Pero los nombres de torneo pueden repetirse entre diferentes torneos (por ejemplo, el “Tour de Francia” se desarrolla todos los años y siempre lleva el mismo nombre).*
+
+*b. Un corredor corre varios torneos. Tiene un código único por torneo, pero en diferentes torneos tiene diferentes códigos.*
+
+*c. Cada corredor tiene varias bicicletas asignadas para un torneo.*
+
+*d. Los cod_bicicleta pueden cambiar en diferentes torneos, pero dentro de un torneo son únicos.*
+
+*e. Cada bicicleta tiene una sola marca.*
+
+*f. Cada corredor tiene varios sponsors en un torneo, y un sponsor puede representar a varios corredores.*
+
+*g. Cada sponsor tiene un único presidente y un único médico*
+
+
 1. ### Determinación de Dependencias Funcionales
 
     Basándonos en las restricciones, podemos deducir las siguientes dependencias funcionales para TORNEO:
